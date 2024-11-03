@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.bg-sage-50 { background-color: #f8faf9; }
+.bg-sage-100 { background-color: #f0f4f1; }
+.text-sage-600 { color: #4b7355; }
+.text-sage-800 { color: #2c4a33; }
+.text-sage-900 { color: #1a2f20; }
+.bg-sage-800 { background-color: #2c4a33; }
+.text-sage-100 { color: #f0f4f1; }
+
+@layer components {
+  .nav-link {
+    @apply text-sage-600 hover:text-sage-900 px-3 py-2 rounded-md text-sm font-medium;
+  }
+}
